@@ -1,9 +1,132 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".LogInActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="Log in"
+        android:gravity="center"
+        android:textColor="@color/Green"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"/>
+
+
+    <RelativeLayout
+        android:id="@+id/form"
+        android:layout_below="@+id/login"
+        android:layout_marginTop="60dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="300dp">
+
+        <EditText
+            android:id="@+id/loginuname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="User Email"
+            android:textColorHint="@color/Green"
+            android:textSize="18sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <EditText
+            android:id="@+id/loginpass"
+            android:layout_below="@+id/loginuname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:textColorHint="@color/Green"
+            android:textSize="18sp"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="45dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="20dp"/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Button"
+        android:layout_below="@+id/form"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnlogin"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:text="LogIn"
+            android:textSize="16sp"
+            android:background="@drawable/button_round"
+            android:textColor="@color/White"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"/>
+    </RelativeLayout>
+
+<RelativeLayout
+    android:id="@+id/again"
+    android:layout_below="@+id/Button"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/notreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Registered? Sign Up Here"
+        android:textColor="@color/Green"
+
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+    <TextView
+        android:id="@+id/recoverpasswordtv"
+        android:layout_below="@+id/notreg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Forgot Password? Recover"
+        android:layout_gravity="center"
+        android:textColor="@color/Green"
+        android:textColorLink="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"/>
+
+</RelativeLayout>
+
+
+
+
+
+</RelativeLayout>
